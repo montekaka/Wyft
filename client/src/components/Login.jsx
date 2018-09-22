@@ -14,7 +14,7 @@ class Login extends React.Component {
   doLogin() {
     console.log(this.state); // FIXME
     jQuery.ajax({
-      url: 'http://localhost:3000/login',
+      url: '/login',
       method: 'POST',
       data: JSON.stringify({username: this.state.username, password: this.state.password}),
       contentType: 'application/json',

@@ -44,7 +44,7 @@ class App extends React.Component {
 
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:3000/api/guests/search',
+      url: '/api/guests/search',
       data: JSON.stringify({ data: zipCode }),
       contentType: 'application/json',
 
@@ -83,7 +83,7 @@ class App extends React.Component {
 
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:3000/api/hosts',
+      url: '/api/hosts',
       data: JSON.stringify({ data: data }),
       contentType: 'application/json',
       success: function(data) {
