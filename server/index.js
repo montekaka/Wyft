@@ -95,7 +95,7 @@ app.post('/api/hosts/:hostId/sessions',
 			], (req, res) => {
 		const errors = validationResult(req);
 		if(!errors.isEmpty()) {
-	    return res.status(422).json({ errors: errors.array() });
+	    return res.json({ errors: errors.array() });
 		}
 		var hostId = req.params.hostId;
 		hostSessions.post(req, res, db, hostId);
