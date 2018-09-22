@@ -48,10 +48,6 @@ const Hosting_Session = orm.define('Hosting_Session',{
   DATE: Sequelize.STRING,
   START_TIME: Sequelize.STRING,
   END_TIME: Sequelize.STRING,
-}, {
-  validate: {
-    
-  }
 })
 
 orm.query("set FOREIGN_KEY_CHECKS=1");
